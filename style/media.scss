@@ -1,0 +1,206 @@
+@media(min-width:2000px) {
+    .header {
+        .nav_ul {
+            &_element {
+                a {
+                    font-size: 30px;
+                }
+            }
+        }
+        button {
+            width: 158px;
+            height: 49px;
+            font-size: 18px;
+        }
+    }
+    .main {
+        .upper-main {
+            .container {
+                .text-block {
+                    .upper-text {
+                        img {
+                            display: none;
+                        }
+                    }
+                    .title {
+                        font-size: 40px;
+                    }
+                        .inf {
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .buttons {
+                    button {
+                      font-size: 18px;
+                    }
+                }
+            }
+        }
+}
+
+@media(max-width:800px) {
+    .header_shop {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+    .header {
+        justify-content: center;
+        .nav_ul {
+            justify-content: center;
+            &_element {
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:350px) {
+    .header {
+        .nav_ul {
+            &_element {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:380px) {
+        .nav_ul_element {
+            font-size: 20px;
+        }
+}
+
+@media(max-width:1430px) {
+    .fullSnicker {
+        display: none;
+    }
+    .smallSnicker {
+        display: block;
+        z-index: 3;
+        width: 600px;
+    }
+}
+
+@media(max-width:1390px) {
+    .smallSnicker {
+        display: block;
+        width: 500px;
+    }
+}
+
+@media(max-width:1250px) {
+    .smallSnicker {
+        display: block;
+        width: 450px;
+    }
+}
+
+@media(max-width:1200px) {
+    .smallSnicker {
+        display: block;
+        width: 400px;
+    }
+}
+
+@media(max-width:1110px) {
+    .smallSnicker {
+        display: block;
+        width: 350px;
+    }
+}
+
+@media(max-width:1050px) {
+    .main {
+        .upper-main {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .smallSnicker {
+        display: none;
+    }
+}
+
+@media(max-width: 560px) {
+    .main {
+        .upper-main {
+            .container {
+                .text-block {
+                    .upper-text {
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                        .title {
+                            font-size: 50px;
+                        }
+                        .inf {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 480px) {
+        .main {
+            .upper-main {
+                .container {
+                    .text-block {
+                        .upper-text {
+                            img {
+                                display: none;
+                            }
+                        }
+                        .title {
+                            font-size: 40px;
+                        }
+                            .inf {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .buttons {
+                        button {
+                            width:109px;
+                            height: 39px;
+                        }
+                    }
+                    .num_info {
+                        &_text {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+@media(max-width:340px) {
+    .main {
+        .upper-main {
+            .container {
+                .text-block {
+                    .upper-text {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                        .title {
+                            font-size: 35px;
+                        }
+                        .inf {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+}

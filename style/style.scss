@@ -1,0 +1,198 @@
+// Font //
+$raleway: "Raleway", sans-serif;
+
+//Fix bug
+.smallSnicker {
+    display: none;
+}
+
+// Main styles for <button> //
+button {
+    background: #5CBE3A;
+    border-radius: 4px;
+    width: 149px;
+    height: 49px;
+    border: none;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 500;
+    transition-duration: 1s;
+    &:hover {
+        background: #5fac45;
+        transition-duration: 1s;
+    }
+}
+
+// Delete styles for <a> //
+a {
+    text-decoration: none;
+    color: #051101;
+    font-weight: 500;
+}
+
+// Main styles for <p> //
+p {
+    font-family: $raleway;
+    color: #051101;
+}
+
+// Code //
+
+// Container //
+.container {
+    width: 71.875%;
+}
+
+// Header //
+.header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EBFFE4;
+    &_container {
+        width: 71.875%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+    }
+    .nav_ul {
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        &_element {
+            margin-left: 30px;
+            a {
+                opacity: 0.6;
+                font-size: 20px;
+            }
+            .active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// Main //
+.upper-main {
+    width: 100vw;
+    background: #EBFFE4;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .text-block {
+            z-index: 2;
+            .upper-text {
+                display: flex;
+                align-items: center;
+                p {
+                    text-transform: uppercase;
+                    color: #5CBE3A;
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+                img {
+                    width: 50px;
+                    height: 17px;
+                }
+            }
+            .title {
+                font-weight: 700;
+                font-size: 61px;
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+            .inf {
+                opacity: 0.7;
+                line-height: 150%;
+                strong {
+                    color: #5CBE3A;
+                }
+            }
+            .pricing {
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                .cost-now {
+                    font-weight: 700;
+                    font-size: 31px;
+                    color: #5CBE3A;
+                }
+                .cost-then {
+                    font-weight: 500;
+                    font-size: 15px;
+                    text-decoration: line-through;
+                    color: #87D16D;
+                    margin-left: 20px;
+                }
+            }
+            .buttons {
+                margin-top: 40px;
+                .main_more::before {
+                    content: "";
+                    width: 159px;
+                    height: 149px;
+                    background-color: #5CBE3A;
+                    display: block;
+                    position: absolute;
+                    margin-top: -100px;
+                    transform: translateX(160px);
+                    z-index: -1;
+                    transition-duration: 1s;
+                }  
+                .main_more {
+                    background: none;
+                    border: 1px solid rgba(92, 190, 58, 0.3);
+                    color: #5CBE3A;  
+                    position: relative;   
+                    overflow: hidden;  
+                    z-index: 2;
+                    &:hover {
+                        &::before {
+                            transition-duration: 1s;
+                            transform: translateX(-10px);
+                        }
+                        color: white;
+                    }          
+                } 
+            }
+            .num_info {
+                width: 300px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 85px;
+                p {
+                    color: #051101;
+                    opacity: 0.7;
+                    font-weight: 500;
+                    text-align: center;
+                }
+                strong {
+                    font-weight: 700;
+                    font-size: 85px;
+                    color: #5CBE3A;
+                }
+            }
+        }
+        .img-block {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .fullSnicker {
+                position: absolute; 
+                z-index: 1;
+                margin-left: -700px;
+                margin-top: -200px;
+            }
+        }
+    }
+}
